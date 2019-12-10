@@ -18,7 +18,8 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    
     <title>Work Day Scheduler</title>
   </head>
 
@@ -29,10 +30,64 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <th>9am</th>
+            <td><textarea class="toDo" id = "toDoNine"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th>10am</th>
+            <td><textarea class="toDo" id = "toDoTen"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>  
+            <th>11am</th>
+            <td><textarea class="toDo" id = "toDoEleven"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th>12pm</th>
+            <td><textarea class="toDo" id = "toDoTwelve"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th>1pm</th>
+            <td><textarea class="toDo" id = "toDoOne"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th>2pm</th>
+            <td><textarea class="toDo" id = "toDoTwo"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th>3pm</th>
+            <td><textarea class="toDo" id = "toDoThree"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+          </tr>
+          <tr>
+            <th>4pm</th>
+            <td><textarea class="toDo" id ="toDoFour"></textarea></td>
+            <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+            <tr>
+              <th>5pm</th>
+              <td><textarea class="toDo" id = "toDoFive"></textarea></td>
+              <td><button class = "saveBtn" onclick="save()"><i class="far fa-save"></i></button></td>
+            </tr>
+          </tr>
+        </tbody>
+      </table>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
